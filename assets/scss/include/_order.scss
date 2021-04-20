@@ -1,0 +1,20 @@
+.order {
+  padding-top: 25px;
+  &__wrapper {
+    margin-top: 25px;
+  }
+  &__list {
+    font-size: 18px;
+    line-height: 19px;
+    color: #5F5F5F;
+  }
+  &__item {
+    margin-bottom: 25px;
+  }
+  @include screen-667 {
+    &__list {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}

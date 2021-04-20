@@ -1,0 +1,25 @@
+/*! Author: Vladislav Dovzhenko; Site: http://dovzhen.co/ */
+
+@import "include/mixin"; // Миксины
+
+@import "include/normalize"; // Нормализация стилей
+
+@import "include/fonts"; // Шрифты
+
+@import "include/base"; // Глобальные настройки
+
+@import "include/components"; // Глобальные стили (Для заголовков, хлебных крошек и др.)
+
+@import "include/style";
+
+@import "include/header";
+
+@import "include/footer";
+
+@import "include/faq";
+
+@import "include/dashboard";
+
+@import "include/terms";
+
+@import "include/order";

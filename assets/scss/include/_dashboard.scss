@@ -1,0 +1,187 @@
+.dashboard {
+  &__head {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 46px;
+    color: #212121;
+    margin: 0;
+  }
+  &__subhead {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 46px;
+    color: #212121;
+    margin-bottom: 25px;
+  }
+  @include screen-667 {
+    &__head {
+      font-size: 24px;
+      line-height: 46px;
+    }
+    &__subhead {
+      font-size: 20px;
+      line-height: 46px;
+    }
+  }
+}
+
+.dashboard-balance {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  &__item {
+    background: #FBFEFF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 255px;
+    padding: 0 11px;
+    margin-bottom: 12px;
+  }
+  &__img {
+    background: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51px;
+    width: 51px;
+    margin-right: 15px;
+  }
+  &__value {
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+  }
+  @include screen-991 {
+    .dashboard__subhead {
+      display: none;
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__left {
+      margin-bottom: 30px; 
+    }
+  }
+  @include screen-667 {
+    &__wrapper {
+      margin-top: 10px;
+    }
+    &__block {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__item {
+      width: 49%;
+      justify-content: center;
+      padding: 0 2px;
+      &:first-child {
+        width: 100%;  
+      }
+    }
+    &__value {
+      font-size: 16px;
+    }
+    &__img {
+      width: 42px;
+      height: 42px;
+      img {
+        height: 21px;
+      }
+    }
+  }
+  @include screen-568 {
+    .calc-block {
+      width: calc(100% + 30px);
+      max-width: calc(100% + 30px);
+    }
+  }
+}
+
+.dashboard-order {
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__create {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 46px;
+    color: #53A3B9;
+    text-decoration: none;
+    span {
+      font-size: 28px;
+    }
+  }
+  &__next {
+    display: none;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .table {
+    margin-bottom: 20px;
+  }
+  @include screen-640 {
+    &__close {
+      display: none;
+    }
+    &__next {
+      display: block;
+    }
+    .table {
+      td {
+        &:nth-last-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.dashboard-history {
+  margin-bottom: 40px;
+  .table {
+    margin-bottom: 20px;
+    tbody {
+      td:last-child {
+        display: none;
+      }
+    }
+  }
+  @include screen-640 {
+    &__close {
+      display: none;
+    }
+    &__next {
+      display: block;
+    }
+    .table {
+      td {
+        &:nth-last-child(2), &:nth-last-child(3) {
+          display: none;
+        }
+      }
+      tbody {
+        td:last-child {
+          display: table-cell;
+        }
+      }
+    }
+  }
+}
